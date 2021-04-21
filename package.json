@@ -1,0 +1,23 @@
+{
+  "name": "truata",
+  "version": "1.0.0",
+  "description": "sample project for truata",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "cypress:cucumber": "cypress run --spec cypress/integration/Search.feature",
+    "cypress:edge" : "cypress run --spec cypress/integration/Search.feature --browser edge"
+  },
+  "dependencies": {
+    "cypress": "^6.0.1",
+    "cypress-cucumber-preprocessor": "^4.0.0",
+    "fs-extra": "^9.0.1",
+    "glob": "^7.1.6"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^2.0.1"
+  }
+}
